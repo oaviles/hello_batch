@@ -1,0 +1,32 @@
+name: 4 Deploy Job
+
+on:
+  workflow_dispatch:
+  
+env:
+  JOB_NAME: oaJobC001
+  POOL_NAME: oaPoo2C
+  AZURE_BATCH_NAME: oabatchservice001
+  AZURE_RG: Batch_Zone
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  create-job:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Create Job
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az batch account login --name ${{ env.AZURE_BATCH_NAME }} --resource-group ${{ env.AZURE_RG }} --shared-key-auth
+          az batch job create --id ${{ env.JOB_NAME }} --pool-id ${{ env.POOL_NAME }}
