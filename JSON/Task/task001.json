@@ -1,6 +1,6 @@
 {
     "id": "oaJobTaskC001",
-    "commandLine": "wget https://www.goole.com",
+    "commandLine": "wget https://www.google.com",
     "containerSettings": {
         "imageName": "busybox:1.28"
     },
