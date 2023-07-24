@@ -1,0 +1,27 @@
+{
+    "id": "oaPoo2C",
+    "vmSize": "standard_a1_v2",
+    "virtualMachineConfiguration": {
+          "imageReference": {
+              "publisher": "microsoft-azure-batch",
+              "offer": "ubuntu-server-container",
+              "sku": "20-04-lts",
+              "version": "latest"
+          },
+      "nodeAgentSKUId": "batch.node.ubuntu 20.04",
+      "containerConfiguration": {
+        "type": "dockerCompatible",
+        "containerImageNames": [
+          "busybox:1.28"
+        ]
+      }
+    },
+    "resizeTimeout": "PT15M",
+    "targetDedicatedNodes": 0,
+    "targetLowPriorityNodes": 1,
+    "taskSlotsPerNode": 3,
+    "taskSchedulingPolicy": {
+      "nodeFillType": "spread"
+    },
+    "enableAutoScale": false
+  }

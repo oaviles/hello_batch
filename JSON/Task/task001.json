@@ -1,0 +1,8 @@
+{
+    "id": "oaJobTaskC001",
+    "commandLine": "wget https://www.goole.com",
+    "containerSettings": {
+        "imageName": "busybox:1.28"
+    },
+    "requiredSlots": 1
+}

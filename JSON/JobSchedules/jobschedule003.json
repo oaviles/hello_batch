@@ -1,0 +1,39 @@
+{
+    "id": "oaJobSC003",
+    "displayName": null,
+        "schedule": {
+        "startWindow": null,
+        "recurrenceInterval": "PT1M"
+    },
+    "jobSpecification": {
+        "priority": 0,
+        "maxParallelTasks": -1,
+        "displayName": null,
+        "usesTaskDependencies": false,
+        "onAllTasksComplete": "noaction",
+        "onTaskFailure": "noaction",
+        "jobManagerTask": {
+            "id": "oaTaskJSC003",
+            "displayName": null,
+            "commandLine": "HERE YOUR API URL (POST)",
+            "containerSettings": {
+                "containerRunOptions": "--rm --workdir /app",
+                "imageName": "oaviles/jobcall-flow-net"
+            },
+            "requiredSlots": 1,
+            "killJobOnCompletion": true,
+            "userIdentity": {
+                "username": null,
+                "autoUser": {
+                    "scope": "pool",
+                    "elevationLevel": "nonadmin"
+                }
+            },
+            "runExclusive": true,
+            "allowLowPriorityNode": true
+        },
+        "poolInfo": {
+            "poolId": "oaPoo2C"
+        }
+     }
+}

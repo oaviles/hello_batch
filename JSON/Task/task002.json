@@ -1,0 +1,9 @@
+{
+    "id": "oaJobTaskC002",
+    "commandLine": "HERE YOUR API URL (POST)",
+    "containerSettings": {
+        "containerRunOptions": "--rm --workdir /app",
+        "imageName": "oaviles/jobcall-flow-net"
+    },
+    "requiredSlots": 1
+}

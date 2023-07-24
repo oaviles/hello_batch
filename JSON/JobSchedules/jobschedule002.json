@@ -1,0 +1,39 @@
+{
+    "id": "oaJobSC002",
+    "displayName": null,
+    "schedule": {
+        "startWindow": null,
+        "recurrenceInterval": "PT1M"
+    },
+    "jobSpecification": {
+        "priority": 0,
+        "maxParallelTasks": -1,
+        "displayName": null,
+        "usesTaskDependencies": false,
+        "onAllTasksComplete": "noaction",
+        "onTaskFailure": "noaction",
+        "jobManagerTask": {
+            "id": "oaTaskJSC002",
+            "displayName": null,
+            "commandLine": "wget www.google.com",
+            "containerSettings": {
+                "containerRunOptions": null,
+                "imageName": "busybox:1.28"
+            },
+            "requiredSlots": 1,
+            "killJobOnCompletion": true,
+            "userIdentity": {
+                "username": null,
+                "autoUser": {
+                    "scope": "pool",
+                    "elevationLevel": "nonadmin"
+                }
+            },
+            "runExclusive": true,
+            "allowLowPriorityNode": true
+        },
+        "poolInfo": {
+            "poolId": "oaPoo2C"
+        }
+     }
+}
