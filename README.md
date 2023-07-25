@@ -10,7 +10,7 @@ Reference: https://learn.microsoft.com/en-us/azure/architecture/reference-archit
 - [Create an Azure Batch account using Terraform](https://learn.microsoft.com/en-us/azure/batch/quick-create-terraform?tabs=azure-cli)
 
 ### Check More DevSquad Projects
-* [DevSquad Main Project](https://github.com/microsoft/fast-prototyping)
+* [DevSquad Main Project](https://github.com/microsoft/devsquad-accelerators)
 
 > Note: This page is getting updated so make sure to check regularly for new resources.
 
