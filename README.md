@@ -2,7 +2,8 @@
 
 This is a collection of sample projects for Cloud Application Developer using Azure Cloud Platform. The sample projects are arranged in different topics about azure batch application process and deployment on Azure Batch Service supported by Secure DevOps Practices.
 
-Reference: https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ai/batch-scoring-r-models
+Reference Architecture: 
+[Batch Process based on Docker Container](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ai/batch-scoring-r-models)
 
 ![](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ai/_images/batch-scoring-r-models.png)
 
