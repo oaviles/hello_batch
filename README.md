@@ -9,6 +9,10 @@ Reference Architecture:
 
 #### Other Resources
 - [Create an Azure Batch account using Terraform](https://learn.microsoft.com/en-us/azure/batch/quick-create-terraform?tabs=azure-cli)
+- [Azure CLI to create Azure Batch Pool](https://learn.microsoft.com/en-us/cli/azure/batch/pool?view=azure-cli-latest#az-batch-pool-create)
+- [JSON file configuration based on Pool with Containers](https://learn.microsoft.com/en-us/rest/api/batchservice/pool/add?tabs=HTTP#add-a-virtualmachineconfiguration-pool-with-containers)
+- [Azure Batch to run container workloads](https://learn.microsoft.com/en-us/azure/batch/batch-docker-container-workloads)
+- [Azure Batch Best Practices](https://learn.microsoft.com/en-us/azure/batch/best-practices)
 
 ### Check More DevSquad Projects
 * [DevSquad Main Project](https://github.com/microsoft/devsquad-accelerators)
